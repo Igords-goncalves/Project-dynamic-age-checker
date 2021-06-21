@@ -7,15 +7,26 @@ header {
     text-align: center;
 }
 section {
-    background: white;
+    background: rgba(0, 0, 0, 20%);
     border-radius: 5%;
     padding: 15PX;
     width: 500PX;
-    box-shadow: 3PX 3PX 10PX rgba(0, 0, 0, 0.3);
+    box-shadow: 3PX 3PX 10PX rgba(0, 0, 0, 0.5);
     text-align: center;
     margin: auto;
+    color: white;
 }
 footer {
     color: white;
     text-align: center;
+}
+#result p {
+    font-size: 10pt;
+    font-weight: lighter;
+    letter-spacing: 0.1rem;
+}
+#button {
+    background: white;
+    padding: 5px 10px;
+    border-radius: 5px;
 }
