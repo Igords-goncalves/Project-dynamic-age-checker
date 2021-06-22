@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(to right, #485563, #29323c);
+    background:   linear-gradient(to left, #67b26f, #4ca2cd);
     font: normal 15pt arial;
     text-align: center;
 }
@@ -10,21 +10,27 @@ h1 {
 #txtano {
     margin-left: 2px;
     border-radius: 4px;
+    background: rgba(255, 255, 255, 100%);
 }
 header {
     color: white;
 }
 section {
-    background: rgba(0, 0, 0, 20%);
+    background: rgba(255, 255, 255, 20%);
     border-radius: 5%;
     padding: 15PX;
     width: 500PX;
-    box-shadow: 3PX 3PX 10PX rgba(0, 0, 0, 0.5);
+    box-shadow: 3PX 3PX 10PX rgba(0, 0, 0, 0.2);
     margin: auto;
     color: white;
 }
 footer {
     color: white;
+}
+#github {
+    width: 30px;
+    height: 30px;
+    opacity: 100%;
 }
 #result {
     font-size: 10pt;
@@ -40,6 +46,7 @@ footer {
     background: white;
     padding: 5px 20px;
     border-radius: 5px;
+    font-size: 12pt;
 }
 img#foto {
     border-radius: 50%;
