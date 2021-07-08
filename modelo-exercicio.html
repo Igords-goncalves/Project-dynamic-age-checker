@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Idade</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&family=Source+Sans+Pro&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -16,7 +18,7 @@
             <p>Ano de Nascimento
                 <input type="number" name="txtano" id="txtano" min="0">
             </p>
-            <p>Sexo:
+            <p>
                 <input type="radio" name="radsex" id="masc" checked>
                 <label for="masc">Masculino</label>
                 <input type="radio" name="radsex" id="feme">
@@ -27,13 +29,17 @@
             </p>
         </div>
         <div id="result">
-            <p>Preencha os dados acima para ver o resultado</p>
-            <img src="who.jpg" alt="who">
+            <p>Preencha os dados</p>
+            <img src="./img/who.jpg" alt="who">
         </div>
     </section>
     <footer>
-        <p>&copy; by Igor Gonçalves</p>
-        <a href="https://github.com/Igords-goncalves" target="blank"><img id="github" src="github.png" alt="github"></a>
+        
+        <p>&copy; by Igor Gonçalves & Curso em Video</p>
+        <div id="imgfooter">
+            <a href="https://github.com/Igords-goncalves" target="blank"><img id="github" src="./img/github.png" alt="github"></a>
+            <a href="https://www.cursoemvideo.com" target="blank"><img id="cursoemvideo" src="img/cursoemvideo.png" alt=""></a>
+        </div>
     </footer>
     <script src="script.js"></script>
 </body>

@@ -17,22 +17,22 @@ function verificar() {
             genero = 'Homem';
             if (idade >= 0 && idade < 3) {
                 //Bebe
-                img.setAttribute('src', 'bebeman.jpg');
+                img.setAttribute('src', './img/bebeman.jpg');
             } else 
                 if (idade >= 3 && idade < 16) {
                 //crianca
-                img.setAttribute('src', 'kidman.jpg');
+                img.setAttribute('src', './img/kidman.jpg');
             } else 
                 if (idade >= 16 && idade < 21) {
                 //jovem
-                img.setAttribute('src', 'youngman.jpg');
+                img.setAttribute('src', './img/youngman.jpg');
             } else 
                 if (idade >= 21 && idade < 50) {
                 //adulto
-                img.setAttribute('src', 'adultman.jpg');
+                img.setAttribute('src', './img/adultman.jpg');
             } else {
                 //idoso
-                img.setAttribute('src', 'oldman.jpg');
+                img.setAttribute('src', './img/oldman.jpg');
             }
         }
         //Woman ========================================== 
@@ -41,22 +41,22 @@ function verificar() {
                 genero = 'Mulher';
                 if (idade >= 0 && idade < 3) {
                     //Bebe
-                    img.setAttribute('src', 'bebewoman.jpg')
+                    img.setAttribute('src', './img/bebewoman.jpg')
                 } else 
                     if (idade >= 3 && idade < 16) {
                     //crianca
-                    img.setAttribute('src', 'kidwoman.jpg')
+                    img.setAttribute('src', './img/kidwoman.jpg')
                 } else 
                     if (idade >= 16 && idade < 21) {
                     //jovem
-                    img.setAttribute('src', 'youngwoman.jpg')
+                    img.setAttribute('src', './img/youngwoman.jpg')
                 } else 
                     if (idade >= 21 && idade < 50) {
                     //adulto
-                    img.setAttribute('src', 'adultwoman.jpg')
+                    img.setAttribute('src', './img/adultwoman.jpg')
                 } else {
                     //idoso
-                    img.setAttribute('src', 'oldwoman.jpg')
+                    img.setAttribute('src', './img/oldwoman.jpg')
                 }
             }
             res.innerHTML = `Genero ${genero} com ${idade} anos`;

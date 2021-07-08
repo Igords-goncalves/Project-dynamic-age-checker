@@ -1,64 +1,91 @@
 body {
-    background:   linear-gradient(to left, #67b26f, #4ca2cd);
+    background: url(./img/background.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
     font: normal 15pt arial;
     text-align: center;
 }
-h1 {
-    color: white;
-    letter-spacing: 0.1rem;
+header {
+    color: #fff200;
+    font-family: 'Playfair Display', serif;
+    font-size: 30pt;
 }
 #txtano {
     margin-left: 2px;
-    border-radius: 4px;
+    border-radius: 0px;
+    border: none;
     background: rgba(255, 255, 255, 100%);
 }
-header {
-    color: white;
-}
+
 section {
-    background: rgba(255, 255, 255, 20%);
-    border-radius: 5%;
-    padding: 15PX;
-    width: 500PX;
-    box-shadow: 3PX 3PX 10PX rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.9);
+    padding: 15px;
+    width: 500px;
     margin: auto;
     color: white;
-}
-footer {
-    color: white;
-}
-#github {
-    width: 30px;
-    height: 30px;
-    opacity: 100%;
+    font-family: 'Source Sans Pro', sans-serif;
+    display: flex;
+    flex-direction: row-reverse;
 }
 #result {
     font-size: 10pt;
     font-weight: lighter;
-    letter-spacing: 0.1rem;
+    margin-top: 12px;
 }
-#result p {
+#result p { /*Paragrafo de preparação*/
     font-size: 10pt;
     font-weight: lighter;
-    letter-spacing: 0.1rem;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-left: 30px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 0;
 }
 #button {
     background: white;
+    background-size: cover;
     padding: 5px 20px;
-    border-radius: 5px;
+    border-radius: 0px;
+    border: none;
     font-size: 12pt;
 }
-img#foto {
-    border-radius: 50%;
-    width: 210px;
-    height: 210px;
-    overflow: hidden;
-    margin: 30px 50px;
+#button:hover {
+    background: rgb(134, 134, 134);
+    transition: 0.3s;
+    color: rgba(255, 255, 255, 100%);
 }
-#result img {
+img#foto { /*Imagem dos seres humanos*/
     border-radius: 50%;
-    width: 210px;
-    height: 210px;
+    width: 180px;
+    height: 180px;
     overflow: hidden;
-    margin: 30px 50px;
+    margin-left: 30px;
+    margin-right: 40px;
+}
+#result img { /*Imagem da interrogação*/
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    overflow: hidden;
+    margin-left: 30px;
+}
+footer {
+    color: white;
+    font-size: 16px;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-top: 50px;
+}
+#imgfooter {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding: 0;
+}
+#cursoemvideo {
+    width: 40px;
+    margin-left: 10px;
+}
+#github {
+    width: 30px;
+    margin-right: 10px;
 }
