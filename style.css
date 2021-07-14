@@ -1,20 +1,8 @@
 body {
     background: url(./img/background.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat;
+    background-size: auto;
     font: normal 15pt arial;
     text-align: center;
-}
-div h1 {
-    color: #fff200;
-    font-family: 'Playfair Display', serif;
-    font-size: 30pt;
-}
-#txtano {
-    margin-left: 2px;
-    border-radius: 0px;
-    border: none;
-    background: rgba(255, 255, 255, 100%);
 }
 
 section {
@@ -27,19 +15,17 @@ section {
     display: flex;
     flex-direction: column;
 }
-#result {
-    font-size: 10pt;
-    font-weight: lighter;
-    margin-top: 12px;
+
+div h1 {
+    color: #fff200;
+    font-family: 'Playfair Display', serif;
+    font-size: 30pt;
 }
-#result p { /*Paragrafo de preparação*/
-    font-size: 10pt;
-    font-weight: lighter;
-    font-family: 'Source Sans Pro', sans-serif;
-    margin-left: 30px;
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-right: 0;
+#txtano {
+    margin-left: 2px;
+    border-radius: 0px;
+    border: none;
+    background: rgba(255, 255, 255, 100%);
 }
 #button {
     background: white;
@@ -54,13 +40,19 @@ section {
     transition: 0.3s;
     color: rgba(255, 255, 255, 100%);
 }
-img#foto { /*Imagem dos seres humanos*/
-    border-radius: 50%;
-    width: 180px;
-    height: 180px;
-    overflow: hidden;
+#result {
+    font-size: 10pt;
+    font-weight: lighter;
+    margin-top: 12px;
+}
+#result p { /*Paragrafo de preparação*/
+    font-size: 10pt;
+    font-weight: lighter;
+    font-family: 'Source Sans Pro', sans-serif;
     margin-left: 30px;
-    margin-right: 40px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 0;
 }
 #result img { /*Imagem da interrogação*/
     border-radius: 50%;
@@ -92,4 +84,14 @@ footer {
 #github {
     width: 30px;
     margin-right: 10px;
+}
+
+/*Imagem dos seres humanos que esta no javScript */
+img#foto { 
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    overflow: hidden;
+    margin-left: 30px;
+    margin-right: 40px;
 }
