@@ -1,28 +1,26 @@
+
 body {
     background: url(./img/background.jpg);
-    background-size: auto;
-    font: normal 15pt arial;
+    background-size: cover;
+    background-repeat: no-repeat;
     text-align: center;
 }
-
+header {
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20pt;
+}
 section {
-    background: rgba(0, 0, 0, 0.9);
     padding: 15px;
-    width: 500px;
+    width: 800px;
     margin: auto;
     color: white;
-    font-family: 'Source Sans Pro', sans-serif;
-    display: flex;
-    flex-direction: column;
+    font-family: 'Quicksand', sans-serif;
 }
 
-div h1 {
-    color: #fff200;
-    font-family: 'Playfair Display', serif;
-    font-size: 30pt;
-}
 #txtano {
     margin-left: 2px;
+    margin-top: 10px;
     border-radius: 0px;
     border: none;
     background: rgba(255, 255, 255, 100%);
@@ -31,6 +29,7 @@ div h1 {
     background: white;
     background-size: cover;
     padding: 5px 20px;
+    margin-bottom: 10px;
     border-radius: 0px;
     border: none;
     font-size: 12pt;
@@ -41,34 +40,23 @@ div h1 {
     color: rgba(255, 255, 255, 100%);
 }
 #result {
-    font-size: 10pt;
+    font-size: 14pt;
     font-weight: lighter;
-    margin-top: 12px;
+    font-family: 'Quicksand', sans-serif;
 }
 #result p { /*Paragrafo de preparação*/
-    font-size: 10pt;
+    font-size: 14pt;
     font-weight: lighter;
-    font-family: 'Source Sans Pro', sans-serif;
-    margin-left: 30px;
-    margin-top: 0;
-    margin-bottom: 0;
     margin-right: 0;
-}
-#result img { /*Imagem da interrogação*/
-    border-radius: 50%;
-    width: 180px;
-    height: 180px;
-    overflow: hidden;
-    margin-left: 30px;
+    font-family: 'Quicksand', sans-serif;
 }
 footer {
     color: white;
     font-size: 16px;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     margin: auto;
     margin-top: 50px;
-    background: rgba(0, 0, 0, 0.9);
-    padding: 15px;
+    background: none;
     width: 500px;
 }
 #imgfooter {
@@ -85,13 +73,13 @@ footer {
     width: 30px;
     margin-right: 10px;
 }
-
 /*Imagem dos seres humanos que esta no javScript */
+/*A imagem ue está em html recebe o mesmo estilo porque contém o mesmo id*/
 img#foto { 
     border-radius: 50%;
     width: 180px;
-    height: 180px;
     overflow: hidden;
-    margin-left: 30px;
-    margin-right: 40px;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
 }
