@@ -16,7 +16,7 @@ function verificar() {
 
         //Man ==========================================
         if (formSex[0].checked) { //Por padrão o elemento radio é representado por 0 e 1
-            genero = 'Homem';
+            genero = 'masculino';
             if (idade >= 0 && idade < 3) {
                 //Bebe
                 img.setAttribute('src', './img/bebeman.jpg');
@@ -41,7 +41,7 @@ function verificar() {
         //Woman ========================================== 
         else 
             if (formSex[1].checked) {
-                genero = 'Mulher';
+                genero = 'feminino';
                 if (idade >= 0 && idade < 3) {
                     //Bebe
                     img.setAttribute('src', './img/bebewoman.jpg')
@@ -64,7 +64,7 @@ function verificar() {
             }
 
             //Resposta ao resultado obtido, usando um innerHTML - mostra na tela
-            res.innerHTML = `Genero ${genero} com ${idade} anos`;
+            res.innerHTML = `<p>Gênero ${genero} com ${idade} anos.</p>`;
             res.appendChild(img);
     }
 }

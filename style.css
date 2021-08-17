@@ -1,85 +1,119 @@
-
+* {
+    margin: 0;
+    padding: 0;
+}
 body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
     background: url(./img/background.jpg);
     background-size: cover;
-    background-repeat: no-repeat;
-    text-align: center;
 }
 header {
+    padding: 30px;
+}
+h1 {
     color: #ffffff;
     font-family: 'Montserrat', sans-serif;
-    font-size: 20pt;
+    font-size: 4em;
 }
-section {
-    padding: 15px;
-    width: 800px;
-    margin: auto;
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+p {
     color: white;
     font-family: 'Quicksand', sans-serif;
 }
 
+/*Divs principais */
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14pt;
+    font-weight: lighter;
+    font-family: 'Quicksand', sans-serif;
+    margin-top: 50px;
+}
+
+/* Componentes das divs principais */
+
 #txtano {
-    margin-left: 2px;
-    margin-top: 10px;
-    border-radius: 0px;
     border: none;
-    background: rgba(255, 255, 255, 100%);
+    background: rgb(255, 255, 255);
+    margin: 20px 0px;
+    margin-left: 3px;
 }
 #button {
     background: white;
-    background-size: cover;
     padding: 5px 20px;
-    margin-bottom: 10px;
-    border-radius: 0px;
     border: none;
     font-size: 12pt;
+    margin: 20px 0px;
+    cursor: pointer;
+}
+.sexo {
+    cursor: pointer;
 }
 #button:hover {
     background: rgb(134, 134, 134);
     transition: 0.3s;
     color: rgba(255, 255, 255, 100%);
 }
-#result {
-    font-size: 14pt;
-    font-weight: lighter;
-    font-family: 'Quicksand', sans-serif;
-}
+
 #result p { /*Paragrafo de preparação*/
-    font-size: 14pt;
+    font-size: 18pt;
     font-weight: lighter;
-    margin-right: 0;
     font-family: 'Quicksand', sans-serif;
 }
+
+/*
+*Imagem dos seres humanos que esta no javScript
+*A imagem que está em html recebe o mesmo estilo porque contém o mesmo id
+*/
+img#foto { 
+    border-radius: 50%;
+    width: 180px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
 footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     color: white;
-    font-size: 16px;
+    font-size: 14px;
     font-family: 'Quicksand', sans-serif;
-    margin: auto;
-    margin-top: 50px;
-    background: none;
-    width: 500px;
+    margin: 5px 0px;
 }
 #imgfooter {
     display: flex;
-    justify-content: center;
     flex-direction: row;
-    padding: 0;
+    justify-content: center;
+    margin-top: 20px;
 }
 #cursoemvideo {
-    width: 40px;
+    width: 42px;
     margin-left: 10px;
 }
 #github {
     width: 30px;
     margin-right: 10px;
 }
-/*Imagem dos seres humanos que esta no javScript */
-/*A imagem ue está em html recebe o mesmo estilo porque contém o mesmo id*/
-img#foto { 
-    border-radius: 50%;
-    width: 180px;
-    overflow: hidden;
-    margin: auto;
-    margin-top: 20px;
-    display: flex;
+
+@media(max-width:647px) {
+    header h1{
+        font-size: 24px;
+    }
 }

@@ -13,15 +13,15 @@
     <header>
         <h1>Verificador de Idade</h1>
     </header>
-    <section>
-        <div>
-            <p>Ano de Nascimento
-                <input type="number" name="txtano" id="txtano" min="0">
+    <main class="container">
+        <div class="info">
+            <p style="font-size: 18px;">Ano de Nascimento
+                <input type="number" name="txtano" id="txtano" min="1900">
             </p>
-            <p>
-                <input type="radio" name="radsex" id="masc" checked>
+            <p style="font-size: 18px;">
+                <input type="radio" name="radsex" id="masc" checked class="sexo">
                 <label for="masc">Masculino</label>
-                <input type="radio" name="radsex" id="feme">
+                <input type="radio" name="radsex" id="feme" class="sexo">
                 <label for="feme">Feminino</label>
             </p>
             <p>
@@ -29,10 +29,10 @@
             </p>
         </div>
         <div id="result">
-            <p>Preencha os dados</p>
+            <p>Preencha os dados&nbsp;...</p>
             <img id="foto" src="./img/who.jpg" alt="who">
         </div>
-    </section>
+    </main>
     <footer>
         
         <p>&copy; by Igor Gonçalves & Curso em Video</p>
